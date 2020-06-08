@@ -76,7 +76,7 @@ async def set_afk(afk_e):
         await afk_e.edit(f"**Into the Void!**\
         \nReason: `{string}`")
     else:
-        await afk_e.edit("**Into The Void!**")
+        await afk_e.edit("**Back to Real Life!**")
     if BOTLOG:
         await afk_e.client.send_message(BOTLOG_CHATID, "#AFK\nYou went Away from Keyboard!")
     ISAFK = True
@@ -99,7 +99,7 @@ async def type_afk_is_not_true(notafk):
     afk_end = back_alive.replace(microsecond=0)
     if ISAFK:
         ISAFK = False
-        msg = await notafk.edit("**I'm back BISH!**")
+        msg = await notafk.edit("**Back to Telegram!**")
         time.sleep(3)
         await msg.delete()
         if BOTLOG:
