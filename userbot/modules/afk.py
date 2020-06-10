@@ -73,7 +73,7 @@ async def set_afk(afk_e):
     afk_start = start_1.replace(microsecond=0)
     if string:
         AFKREASON = string
-        await afk_e.edit(f"**Into the Void!**\
+        await afk_e.edit(f"**Back to Real Life!**\
         \nReason: `{string}`")
     else:
         await afk_e.edit("**Back to Real Life!**")
